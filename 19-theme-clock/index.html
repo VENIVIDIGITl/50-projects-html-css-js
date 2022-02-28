@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Theme Clock</title>
+</head>
+<body>
+  <!-- Inspired by this dribbble shot https://dribbble.com/shots/5958443-Alarm-clock -->
+  
+  <div class="buttons">
+    <button class="btn toggle-mode">Light Mode</button>
+    <button class="btn toggle-clock-view">12 Hour Mode</button>  
+    <button class="btn toggle-seconds">Toggle Seconds</button>  
+  </div>
+
+  <div class="clock-container">
+    <div class="clock">
+      <div class="needle hour"></div>
+      <div class="needle minute"></div>
+      <div class="needle second"></div>
+      <div class="center-point"></div>
+    </div>
+
+    <div class="time"></div>
+    <div class="date"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
