@@ -36,7 +36,6 @@ function dragEnter(event) {
 
 
 function dragLeave() {
-  console.log('5 drag leave');
   this.className = 'empty';
 };
 
