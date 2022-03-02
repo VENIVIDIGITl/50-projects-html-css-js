@@ -104,6 +104,10 @@ body {
   letter-spacing: 1px;
 }
 
+.content {
+  padding: 0 20px;
+}
+
 .content h2, .content h3 {
   font-size: 150%;
   margin: 20px 0;
@@ -113,4 +117,22 @@ body {
   color: #555;
   line-height: 30px;
   letter-spacing: 1.2px;
+}
+
+@media (max-width: 500px) {
+  .nav .container {
+    flex-direction: column;
+  }
+
+  .nav .container h1 {
+    font-size: 0;
+  }
+
+  .nav .container a {
+    padding: 7px 12px;
+  }
+
+  .content {
+    padding: 0 12px;
+  }
 }
