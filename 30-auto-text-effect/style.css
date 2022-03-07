@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #4169e1, #00ffbf);
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#text-input {
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  width: 500px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  margin: 50px auto;
+}
+
+h1 {
+  color: #003c80;
+  letter-spacing: 1px;
+  padding: 2px;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  animation: blink 0.5s infinite;
+}
+
+.speed {
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+
+.speed label {
+  color: #00ffdd;
+}
+
+.speed input {
+  background-color: rgba(0, 0, 0, 0);
+  color: #00ffdd;
+  font-size: 18px;
+  text-align: center;
+  width: 50px;
+  padding: 5px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+@keyframes blink {
+  to {
+    border-color:rgba(0, 0, 0, 0);
+  }
+}
