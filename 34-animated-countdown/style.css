@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to top, #effeff, #fff);
+  font-family: 'Roboto', sans-serif;
+  color: #474747;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+button {
+  background-color: #f9ffff;
+  color: #6dc7d4;
+  letter-spacing: 1.7px;
+  padding: 5px 15px;
+  border: 1px solid #7ebfc9;
+  border-radius: 20px;
+  box-shadow: 0 2px 20px 0px rgba(60, 138, 125, 0.3);
+  cursor: pointer;
+}
+
+.counter {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.counter.hide {
+  transform: translate(-50%, -50%) scale(0);
+  animation: hide 0.2s ease-out;
+}
+
+@keyframes hide {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.final {
+  text-align: center;
+  letter-spacing: 1.7px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.final.show {
+  transform: translate(-50%, -50%) scale(1);
+  animation: show 0.2s ease-out;
+}
+
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  30% {
+    transform: translate(-50%, -50%) scale(2.4);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.nums {
+  color: #6dc7d4;
+  font-size: 50px;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 50px;
+}
+
+.nums span {
+  font-family: 'Pacifico', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(120deg);
+  transform-origin: bottom center;
+}
+
+.nums span.in {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: goIn 0.5s ease-in-out;
+}
+
+.nums span.out {
+  animation: goOut 0.5s ease-in-out;
+}
+
+@keyframes goIn {
+  0% {
+  transform: translate(-50%, -50%) rotate(120deg);
+  }
+  30% {
+  transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  60% {
+  transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+  transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+
+@keyframes goOut {
+  0% {
+  transform: translate(-50%, -50%) rotate(0deg);
+  }
+  60% {
+  transform: translate(-50%, -50%) rotate(20deg);
+  }
+  100% {
+  transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}
