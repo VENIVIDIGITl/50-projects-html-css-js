@@ -44,7 +44,7 @@ const quizData = [
 
 
 let currentQuiz = 0;
-let score = 0
+let score = 0;
 
 loadQuiz();
 
